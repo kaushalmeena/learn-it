@@ -132,4 +132,7 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
+# Misc
+.vscode/
+
 # End of https://www.gitignore.io/api/androidstudio
