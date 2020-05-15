@@ -1,6 +1,6 @@
 # Learn-It
 
-A simple android app which uses RecyclerView to list Physics concepts in cards and ViewPager to show about information about these concepts.
+A simple android app which uses RecyclerView to list physics concepts in cards and ViewPager to show about information about these concepts.
 
 ## Requirements
 
