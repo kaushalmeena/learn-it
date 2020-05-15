@@ -14,7 +14,6 @@
     <string name="pwe_desc">Kinetic energy, potential energy, work</string>
     <string name="prev_button">PREV</string>
     <string name="next_button">NEXT</string>
-    <string name="splash_image_desc">Splash screen</string>
     <string name="card_image_desc">Card Image</string>
     <string name="page_image_desc">Page Image</string>
 </resources>
