@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Learn-It</string>
+    <string name="lm">Linear Motion</string>
+    <string name="lm_desc">Displacement, average velocity, instantaneous velocity, acceleration</string>
+    <string name="uam">Uniformly accelerated motion</string>
+    <string name="uam_desc">Position, velocity, acceleration</string>
+    <string name="pm">Projectile motion</string>
+    <string name="pm_desc">Horizontal motion, vertical motion, trajectory, range of projectile</string>
+    <string name="ccm">Constant circular motion</string>
+    <string name="ccm_desc">Period, frequency, angular velocity, centripetal acceleration and force</string>
+    <string name="f">Force</string>
+    <string name="f_desc">Newton\'s laws, weight force, normal force, friction</string>
+    <string name="pwe">Power, work, energy</string>
+    <string name="pwe_desc">Kinetic energy, potential energy, work</string>
+    <string name="prev_button">PREV</string>
+    <string name="next_button">NEXT</string>
+    <string name="splash_image_desc">Splash screen</string>
+    <string name="card_image_desc">Card Image</string>
+    <string name="page_image_desc">Page Image</string>
+</resources>
