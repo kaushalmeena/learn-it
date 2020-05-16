@@ -16,14 +16,14 @@ To set up everything in your local machine, you need to follow these steps:
 1. Clone this repo onto your computer:
 
 ```bash
-$ git clone https://github.com/kaushalmeena1996/myapp-learn-it.git
+$ git clone https://github.com/kaushalmeena1996/learn-it.git
 ```
 
 2. Open Android Studio
 
 3. Either press 'Open an Existing Android Studio Project' or click File > Open...
 
-4. Navigate to `myapp-learn-it` folder. Press Choose, or OK
+4. Navigate to `learn-it` folder. Press Choose, or OK
 
 5. Wait for the Gradle execution to complete. You should see 'app' appear as one of the build configurations
 
