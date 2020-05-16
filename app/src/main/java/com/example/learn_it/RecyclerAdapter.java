@@ -13,7 +13,7 @@ import java.util.List;
 class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
     private final List<DataModel> list;
 
-    public RecyclerAdapter(List<DataModel> list) {
+    RecyclerAdapter(List<DataModel> list) {
         this.list = list;
     }
 
@@ -35,19 +35,30 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
             public void onClick(View view, int position) {
                 Intent intent = new Intent(view.getContext(), SlideActivity.class);
 
-                if (position == 0) {
-                    intent.putExtra("PAGE_NO", 1);
-                } else if (position == 1) {
-                    intent.putExtra("PAGE_NO", 10);
-                } else if (position == 2) {
-                    intent.putExtra("PAGE_NO", 17);
-                } else if (position == 3) {
-                    intent.putExtra("PAGE_NO", 24);
-                } else if (position == 4) {
-                    intent.putExtra("PAGE_NO", 29);
-                } else if (position == 5) {
-                    intent.putExtra("PAGE_NO", 36);
+                int pageNo = 1;
+
+                switch (position) {
+                    case 0:
+                        pageNo = 1;
+                        break;
+                    case 1:
+                        pageNo = 10;
+                        break;
+                    case 2:
+                        pageNo = 17;
+                        break;
+                    case 3:
+                        pageNo = 24;
+                        break;
+                    case 4:
+                        pageNo = 29;
+                        break;
+                    case 5:
+                        pageNo = 36;
+                        break;
                 }
+
+                intent.putExtra("PAGE_NO", pageNo);
 
                 view.getContext().startActivity(intent);
             }
@@ -57,10 +68,5 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> {
     @Override
     public int getItemCount() {
         return list.size();
-    }
-
-    @Override
-    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
     }
 }

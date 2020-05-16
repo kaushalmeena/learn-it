@@ -16,7 +16,7 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.Locale;
 
 public class SlideActivity extends FragmentActivity {
-    private static final int NUM_ITEMS = 40;
+    private static final int LIST_LENGTH = 40;
 
     private ViewPager viewPager;
 
@@ -33,8 +33,8 @@ public class SlideActivity extends FragmentActivity {
         viewPager.setPageTransformer(false, new DepthPageTransformer());
 
         int pageNo = 1;
-        Bundle extras = getIntent().getExtras();
 
+        Bundle extras = getIntent().getExtras();
         if (extras != null) {
             pageNo = extras.getInt("PAGE_NO");
         }
@@ -57,7 +57,7 @@ public class SlideActivity extends FragmentActivity {
 
         @Override
         public int getCount() {
-            return NUM_ITEMS;
+            return LIST_LENGTH;
         }
 
         @Override
@@ -88,14 +88,15 @@ public class SlideActivity extends FragmentActivity {
             View swipeView = inflater.inflate(R.layout.fragment_swipe, container, false);
             ImageView imageView = swipeView.findViewById(R.id.page_image);
 
-            Bundle bundle = getArguments();
             int position = 0;
 
+            Bundle bundle = getArguments();
             if (bundle != null) {
                 position = bundle.getInt("position");
             }
 
             String imageFileName = String.format(Locale.ENGLISH, "a%02d", position + 1);
+
             int imageResourceId = getResources().getIdentifier(imageFileName, "drawable", "com.example.learn_it");
 
             imageView.setImageResource(imageResourceId);

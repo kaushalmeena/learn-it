@@ -10,19 +10,19 @@ public class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnCl
     final TextView title;
     final TextView description;
     final ImageView image;
+
     private ClickListener clickListener;
 
-    RecyclerHolder(View itemView) {
-        super(itemView);
-        title = itemView.findViewById(R.id.card_title);
-        description = itemView.findViewById(R.id.card_desc);
-        image = itemView.findViewById(R.id.card_image);
+    RecyclerHolder(View view) {
+        super(view);
 
-        itemView.setOnClickListener(this);
-    }
+        View card = view.findViewById((R.id.card_view));
 
-    public interface ClickListener {
-        void onClick(View v, int position);
+        title = view.findViewById(R.id.card_title);
+        description = view.findViewById(R.id.card_desc);
+        image = view.findViewById(R.id.card_image);
+
+        card.setOnClickListener(this);
     }
 
     public void setClickListener(ClickListener clickListener) {
@@ -30,7 +30,11 @@ public class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnCl
     }
 
     @Override
-    public void onClick(View v) {
-        clickListener.onClick(v, getLayoutPosition());
+    public void onClick(View view) {
+        clickListener.onClick(view, getLayoutPosition());
+    }
+
+    public interface ClickListener {
+        void onClick(View view, int position);
     }
 }
