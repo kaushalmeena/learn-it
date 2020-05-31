@@ -10,8 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 To install this project you need:
 
-- [Android Studio 3.5+](https://developer.android.com/studio "Android Studio 3.5+")
-- Android SDK with Android platform version 24+
+- [Android Studio 3.5+](https://developer.android.com/studio "Android Studio 3.5+") (alongwith Android SDK with Android platform version 24+)
+- [git](https://git-scm.com/downloads "git") (only to clone this repository)
 
 ### Installation
 
