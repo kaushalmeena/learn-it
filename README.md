@@ -29,6 +29,10 @@ $ git clone https://github.com/kaushalmeena/learn-it.git
 
 4. Navigate to `learn-it` folder. Press Choose, or OK
 
+## Screenshots
+
+<img src="./screenshots/MainScreen.png" width="250"> <img src="./screenshots/Page19.png" width="250" /> <img src="./screenshots/Page24.png" width="250"/>
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
